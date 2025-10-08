@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade de Juegos - Proyecto JS/POO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Mi Arcade de Juegos (Proyecto POO en JavaScript) 🎮</h1>
+        <button onclick="requestFullscreen()" style="background-color: #f39c12; color: white; padding: 10px 20px; border-radius: 5px; margin-top: 10px;">
+            🖥️ Pantalla Completa
+        </button>
+    </header>
+
+    <div id="menu-container">
+        <h2>Elige un Juego:</h2>
+        
+        <button onclick="app.loadGame('DinoRunnerPlus')" style="background-color: #2ecc71;">🦖 Dino Runner Plus (30 Niveles)</button>
+        
+        <button onclick="app.loadGame('Triqui')">Triqui (2P/Vs. CPU - Arreglado)</button>
+        <button onclick="app.loadGame('Damas')">Damas (2P/Vs. CPU - Arreglado)</button>
+
+        <button onclick="app.loadGame('Ahorcado')" style="background-color: #f39c12;">El Ahorcado (Individual)</button>
+        
+        <button onclick="app.loadGame('DadosMultijugador')" style="background-color: #1abc9c;">🎲 Dados (Hasta 6 Jugadores)</button>
+    </div>
+
+    <div id="game-container">
+        <h2 class="welcome" style="color: #ccc;">Selecciona un juego del menú superior para empezar.</h2>
+    </div>
+
+    <footer>
+        </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

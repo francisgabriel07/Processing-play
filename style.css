@@ -1,0 +1,197 @@
+/* ======================================= */
+/* === Estilos Generales y del Menú === */
+/* ======================================= */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50; /* Azul oscuro */
+    color: #ecf0f1; /* Blanco claro */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #34495e; /* Gris/Azul */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    color: #f1c40f; /* Amarillo */
+}
+
+#menu-container {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#menu-container button, button {
+    background-color: #3498db; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+#menu-container button:hover, button:hover {
+    background-color: #2980b9;
+}
+
+#game-container {
+    max-width: 900px;
+    min-height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4a6075; /* Fondo del juego */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos específicos para los inputs */
+input[type="number"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+
+/* ======================================= */
+/* === Estilos para Triqui (Tic-Tac-Toe) === */
+/* ======================================= */
+#triqui-board {
+    display: grid;
+    gap: 5px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.triqui-cell {
+    width: 80px;
+    height: 80px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+.triqui-cell:hover {
+    background-color: #bdc3c7;
+}
+
+/* Estilos para las marcas */
+.playerX { color: #e74c3c; } /* Rojo */
+.playerO { color: #2ecc71; } /* Verde */
+
+/* Para el tablero 5x5 */
+.triqui-board-large .triqui-cell {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+}
+
+
+/* ======================================= */
+/* === Estilos para Damas (Checkers) === */
+/* ======================================= */
+#damas-board {
+    display: grid;
+    width: 480px; /* 8 * 60px */
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+.damas-cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.damas-cell.light { background-color: #f6e58d; } /* Amarillo claro */
+.damas-cell.dark { background-color: #c0392b; } /* Rojo oscuro */
+.damas-cell.selected { border: 3px solid #3498db; box-sizing: border-box; } /* Borde azul para selección */
+
+.damas-piece {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+}
+
+.damas-piece.red { background-color: #e74c3c; }
+.damas-piece.black { background-color: #2c3e50; }
+.damas-piece.king { border: 4px solid #f1c40f; } /* Corona amarilla */
+
+
+/* ======================================= */
+/* === Estilos para El Ahorcado === */
+/* ======================================= */
+#hangman-container {
+    padding: 20px;
+}
+
+#hangman-word {
+    font-size: 3em;
+    letter-spacing: 15px;
+    margin: 30px 0;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+#hangman-letters button {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: #3498db;
+}
+
+#hangman-letters button:disabled {
+    background-color: #95a5a6;
+    cursor: default;
+}
+
+
+/* ======================================= */
+/* === Estilos para Dino Runner Plus === */
+/* ======================================= */
+#dino-gameboard {
+    position: relative;
+    width: 800px; 
+    height: 150px; 
+    margin: 20px auto;
+    border-bottom: 5px solid #000;
+    background-color: #ecf0f1;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #34495e;
+    color: #bdc3c7;
+}
